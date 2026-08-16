@@ -11,4 +11,4 @@ source $path/conf.d/phish-aliases.fish
 source $path/conf.d/phish-environment.fish
 source $path/omf/fzf.fish
 
-for file in (find functions/ -maxdepth 1 -name '*.fish' -print -quit); source $file; end
+for file in (find $path/functions/ -maxdepth 1 -name '*.fish' -print -quit); source $file; end
