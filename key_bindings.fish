@@ -17,4 +17,3 @@ end
 if set -q FZF_COMPLETE
     bind \t '__fzf_complete'
 end
-

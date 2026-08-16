@@ -1,8 +1,0 @@
-#!/bin/bash
-
-NAME=$(wmctrl -l | grep Telegram)
-if [ -z "$NAME" ] ; then
-  Telegram&
-else
-  wmctrl -a Telegram
-fi

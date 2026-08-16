@@ -369,4 +369,3 @@ function __fzfcmd
         echo "fzf"
     end
 end
-

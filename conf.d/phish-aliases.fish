@@ -1,7 +1,6 @@
 alias ..='cd ..'
 alias ccd='builtin cd'
 alias mkdir='mkdir -p'
-abbr -a nano vim
 alias ccat='command cat'
 alias meh='echo "¯\\_(ツ)_/¯"'
 alias pubip='curl ipecho.net/plain; and echo'
@@ -45,8 +44,8 @@ abbr -a d docker
 abbr -a deit docker exec -it 
 abbr -a di docker inspect
 abbr -a dk docker kill
-abbr -a dc docker-compose
-abbr -a dcud docker-compose up -d
+abbr -a dc docker compose
+abbr -a dcud docker compose up -d
 
 # json
 alias pj='python -c "import sys, ast, json; print json.dumps(ast.literal_eval(sys.stdin.read().strip()))" | j'
@@ -66,10 +65,11 @@ abbr -a ktn   kubectl top node
 
 abbr -a r redis-cli
 
+
 # add os depending alias file
 switch (uname)
-case Darwin
-	source $path/os/osx/alias.fish
-case '*'
-	source $path/os/linux/alias.fish
+    case Darwin
+        source (dirname (status filename))/../os/osx/alias.fish
+    case '*'
+        source (dirname (status filename))/../os/linux/alias.fish
 end
