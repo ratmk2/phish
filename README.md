@@ -10,6 +10,9 @@
 
 <br/>
 
+**Attention:** You have to manully keep the Fisher and the Oh My Fish operating systems dependencies in sync.
+
+
 ## Dependencies
 
 The following binaries are needed:
@@ -35,7 +38,7 @@ $ fisher install rettier/phish
 ```
 
 There is a difference if you install this plugin using Fisher. 
-The plugin fzf will not be installed, you should the Fisher plugin instead:
+The plugin fzf will not be installed, you should use the Fisher plugin instead:
 ```fish
 $ fisher install PatrickF1/fzf.fish
 ```

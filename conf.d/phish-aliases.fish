@@ -37,7 +37,7 @@ abbr -a pirr pip install -r requirements.txt
 
 # django
 abbr -a pm python manage.py
-abbr -a pmm python manage.py migrate 
+abbr -a pmm python manage.py migrate Linux
 abbr -a pmmk python manage.py makemigrations
 abbr -a pmmke python manage.py makemessages
 abbr -a pmcme python manage.py compilemessages
@@ -70,11 +70,3 @@ abbr -a ktp   kubectl top pod
 abbr -a ktn   kubectl top node
 
 abbr -a r redis-cli
-
-# add os depending alias file
-switch (uname)
-    case Darwin
-        source (dirname (status filename))/../os/osx/alias.fish
-    case '*'
-        source (dirname (status filename))/../os/linux/alias.fish
-end
