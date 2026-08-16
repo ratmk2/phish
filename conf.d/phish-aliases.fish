@@ -11,6 +11,12 @@ abbr -a le load-env
 abbr -a cdc cd \(c\)
 abbr -a rle readlink -e
 abbr -a gcmeh git commit -m \"(meh)\"
+alias cat="bat --paging=never -pp --style='plain'"
+alias ls="eza" 
+alias ll="eza -lah" 
+alias la="eza -a" 
+alias tree="eza --tree" 
+alias fd="fdfind" 
 
 # git
 abbr -a gau git add -u
@@ -64,7 +70,6 @@ abbr -a ktp   kubectl top pod
 abbr -a ktn   kubectl top node
 
 abbr -a r redis-cli
-
 
 # add os depending alias file
 switch (uname)
